@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary: #2C74B3;
+    --secondary: #205295;
+    --accent: #FBCE84;
+    --text: #515151;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    overflow-y: hidden;
+}
+
+.shadow {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    background: var(--accent);
+    height: 30vh;
+    max-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero > img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-buttons > i {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+.tracker-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: calc(70vh - 20px);
+    overflow: auto;
+}
+
+.track {
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-modal {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(1, 1, 1, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 5px;
+    transition: .2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--accent);
+}
+
+.popup > .accept-button {
+    background: var(--accent);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup > .accept-button:hover {
+    filter: opacity(.5);
+}

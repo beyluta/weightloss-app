@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="hero">
+        <div class="top-buttons">
+          <i class="fa-solid fa-plus shadow" id="add"></i>
+        </div>
+        <img src="assets/imgs/indoor-running.png" />
+      </div>
+    </section>
+    <section>
+      <div class="tracker-list">
+        <script src="assets/scripts/tracker.js"></script>
+      </div>
+    </section>
+    <div id="add-modal" class="add-modal">
+      <div class="overlay"></div>
+      <div class="popup">
+        <input id="weight" type="number" placeholder="80.4kg" />
+        <div class="accept-button shadow" id="confirm">Confirm</div>
+      </div>
+    </div>
+  </body>
+</html>
